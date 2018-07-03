@@ -80,8 +80,7 @@ class ArchMIPS32(Arch):
     instruction_alignment = 4
     register_list = [
         Register(name='zero', size=4, alias_names=('r0',)),
-        Register(name='at', size=4, alias_names=('r1',),
-                 general_purpose=True, argument=True),
+        Register(name='at', size=4, alias_names=('r1',)),
         Register(name='v0', size=4, alias_names=('r2',),
                  general_purpose=True, linux_entry_value='ld_destructor'),
         Register(name='v1', size=4, alias_names=('r3',),
